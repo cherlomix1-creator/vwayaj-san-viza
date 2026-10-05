@@ -89,17 +89,44 @@ footer { font-size: 0.88rem; color: var(--muted); display: flex; flex-direction:
 footer a, .box a { color: var(--blue); }
 @media (prefers-reduced-motion: no-preference) { .chip { transition: background 0.15s, color 0.15s; } }
 
+.logo-link{display:block;align-self:flex-start}
+.logo{width:100%;max-width:340px;height:auto;display:block}
+.menu{display:flex;flex-wrap:wrap;gap:6px 18px;font-weight:600;font-size:.95rem}
+.menu a{color:var(--fg);text-decoration:none;padding:4px 0;border-bottom:2px solid transparent}
+.menu a:hover,.menu a:focus-visible{border-bottom-color:var(--red)}
+.cta{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-block;font-weight:600;text-decoration:none;color:var(--blue);background:var(--surface);border:1.5px solid var(--blue);border-radius:6px;padding:11px 18px}
+.btn.primary{background:var(--blue);color:#fff}
+:root[data-theme="dark"] .btn.primary{color:#0a1224}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .btn.primary{color:#0a1224}}
+.logo-link{background:#fff;border-radius:8px;padding:8px}
+.thumb{display:block;height:150px;border-radius:6px;background:var(--img),linear-gradient(135deg,var(--c1),var(--c2));background-size:cover;background-position:center}
+.country-link{color:inherit;text-decoration:none;border-bottom:2px solid var(--line)}
+.country-link:hover,.country-link:focus-visible{border-bottom-color:var(--red);color:var(--blue)}
+.row{cursor:default}
 .site-links,.social-links{display:flex;flex-wrap:wrap;gap:8px 14px;margin-top:4px}
 .site-links a,.social-links a{font-weight:600}
 </style>
 
 <div class="wrap">
   <header>
+    <a href="/" class="logo-link" aria-label="FrereJeangardy.com — Akèy"><img class="logo" src="logo.png" alt="Vwayaj San Viza — Pa Frère Jeangardy" width="900" height="450"></a>
+    <nav class="menu" aria-label="Meni prensipal">
+      <a href="/">Akèy</a>
+      <a href="#t-lis">Peyi San Viza</a>
+      <a href="#t-travay">Travay pa Peyi</a>
+      <a href="blog-peyi-san-viza.html">Blog</a>
+      <a href="contact.html">Kontakte Nou</a>
+    </nav>
     <div class="stripe"></div>
     <span class="stamp">Verifye 4 oktòb 2026</span>
-    <h1>Vwayaj San Viza pou Ayisyen</h1>
+    <h1>Peyi San Viza ak e-Viza pou Ayisyen</h1>
     <p class="lead">Lis peyi kote yon moun ki gen paspò ayisyen ka antre san viza oswa jwenn li lè l rive. Ou wè konbyen jou ou ka rete ak kondisyon yo.</p>
     <p class="by">Pa <strong>Frère Jeangardy</strong></p>
+    <div class="cta">
+      <a class="btn primary" href="#t-lis">Chèche Peyi</a>
+      <a class="btn" href="#t-travay">Travay Aletranje</a>
+    </div>
   </header>
 
   <div class="warn" role="note">
@@ -167,6 +194,31 @@ footer a, .box a { color: var(--blue); }
     </div>
   </section>
 
+  <section class="sec" aria-labelledby="t-travay">
+    <h2 id="t-travay">Kondisyon Travay pa Peyi</h2>
+    <div class="warn" role="note">
+      <strong>Atansyon ak fo ofri travay</strong>
+      <p>Nou pa ajans rekritman e nou pa vann kontra travay. Pa peye pesonn pou yon "garanti" travay. Verifye ofri yo ak sit gouvènman an oswa anbasad la.</p>
+    </div>
+    <div class="cols">
+      <div class="box">
+        <h3><a href="peyi-singapou.html">Singapou</a></h3>
+        <a class="thumb" href="peyi-singapou.html" aria-label="Singapou" style="--img:url('img-singapou.jpg');--c1:#c8102e;--c2:#0e1a33"></a>
+        <p><strong>Travay:</strong> Pèmi travay obligatwa. Salè yo wo, men règ travay yo strik.</p>
+      </div>
+      <div class="box">
+        <h3><a href="peyi-rwanda.html">Rwanda</a></h3>
+        <a class="thumb" href="peyi-rwanda.html" aria-label="Rwanda" style="--img:url('img-rwanda.jpg');--c1:#00a1de;--c2:#20603d"></a>
+        <p><strong>Travay:</strong> Opòtinite nan sèvis, touris ak teknoloji. Pèmi travay nesesè.</p>
+      </div>
+      <div class="box">
+        <h3><a href="peyi-malezi.html">Malezi</a></h3>
+        <a class="thumb" href="peyi-malezi.html" aria-label="Malezi" style="--img:url('img-malezi.jpg');--c1:#010066;--c2:#cc0001"></a>
+        <p><strong>Travay:</strong> Travay etranje yo bezwen sponsor ak pèmi travay.</p>
+      </div>
+    </div>
+  </section>
+
   <footer>
     <div>Sous yo varye selon peyi. Lè gen yon lyen ofisyèl, verifye kondisyon final yo dirèkteman ak otorite peyi a. Paj sa a pa ranplase sit gouvènman oswa konsila yo.</div>
     <div>Dènye verifikasyon: 4 oktòb 2026. Si ou wè yon enfòmasyon ki chanje, di nou pou n korije l.</div>
@@ -185,27 +237,6 @@ footer a, .box a { color: var(--blue); }
       <a href="https://www.facebook.com/share/1Lxa4f39zq/" target="_blank" rel="noopener">Facebook</a>
     </div>
 </footer>
-
-<section class="sec" aria-labelledby="t-travay">
-<h2 id="t-travay">Kondisyon Travay pa Peyi</h2>
-<div class="cols">
-  <div class="box">
-    <h3>Singapou</h3>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Singapore_skyline.jpg" alt="Singapou">
-    <p><strong>Travay:</strong> Pèmi travay obligatwa. Salè yo wo, men règ travay yo strik.</p>
-  </div>
-  <div class="box">
-    <h3>Rwanda</h3>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Kigali_Rwanda.jpg" alt="Rwanda">
-    <p><strong>Travay:</strong> Opòtinite nan sèvis, touris ak teknoloji. Pèmi travay nesesè.</p>
-  </div>
-  <div class="box">
-    <h3>Malezi</h3>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Kuala_Lumpur_Skyline.jpg" alt="Malezi">
-    <p><strong>Travay:</strong> Travay etranje yo bezwen sponsor ak pèmi travay.</p>
-  </div>
-</div>
-</section>
 
 </div>
 
@@ -238,6 +269,7 @@ footer a, .box a { color: var(--blue); }
     { n: "Burundi", t: "voa", d: "Pa make", note: "" },
     { n: "Bangladèch", t: "voa", d: "Pa make", note: "Gen kondisyon." }
   ];
+  var slugs = {"Singapou": "singapou", "Malezi": "malezi", "Filipin": "filipin", "Hong Kong": "hong-kong", "Rwanda": "rwanda", "Benen": "benen", "Gambi": "gambi", "Angola": "angola", "Grenad": "grenad", "Kiribati": "kiribati", "Mikwonezi": "mikwonezi", "Samoa": "samoa", "Maldiv": "maldiv", "Sechèl": "sechel", "Palau": "palau", "Senegal": "senegal", "Moris": "moris", "Tuvalu": "tuvalu", "Timò-Leste": "timo-leste", "Lejip": "lejip", "Jòdani": "jodani", "Kap Vè": "kap-ve", "Komò": "komo", "Burundi": "burundi", "Bangladèch": "bangladech"};
   var state = { f: "all", q: "" };
   var list = document.getElementById("list");
   var count = document.getElementById("count");
@@ -263,7 +295,11 @@ footer a, .box a { color: var(--blue); }
       li.className = "row";
       var name = document.createElement("div");
       name.className = "name";
-      name.textContent = c.n;
+      var link = document.createElement("a");
+      link.href = "peyi-" + slugs[c.n] + ".html";
+      link.className = "country-link";
+      link.textContent = c.n;
+      name.appendChild(link);
       var tag = document.createElement("span");
       tag.className = "tag " + c.t;
       tag.textContent = c.t === "free" ? "San viza" : "Lè w rive";

@@ -1,0 +1,5 @@
+FrereJeangardy.com - sit konplè (tout fichye nan yon sèl katab, san sou-katab)
+
+Foto peyi yo: mete yo nan menm kote ak lòt fichye yo, ak non sa yo:
+img-singapou.jpg, img-malezi.jpg, img-rwanda.jpg, img-filipin.jpg, img-hong-kong.jpg, ...
+(Non an = "img-" + non paj la. Egzanp: peyi-singapou.html -> img-singapou.jpg)
