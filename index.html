@@ -1,0 +1,337 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style><title>Vwayaj San Viza — Viza, Vwayaj ak Travay pou Ayisyen</title>
+<meta name="description" content="Vwayaj San Viza ede Ayisyen jwenn enfòmasyon sou viza, vwayaj, travay aletranje ak kondisyon antre nan diferan peyi.">
+<meta name="author" content="Frère Jeangardy">
+<link rel="canonical" href="https://frerejeangardy.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Vwayaj San Viza — Frère Jeangardy">
+<meta property="og:description" content="Enfòmasyon sou viza, vwayaj ak opòtinite travay aletranje pou Ayisyen.">
+<meta property="og:url" content="https://frerejeangardy.com/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Vwayaj San Viza — Frère Jeangardy">
+<meta name="twitter:description" content="Enfòmasyon sou viza, vwayaj ak travay aletranje pou Ayisyen.">
+<link rel="icon" href="favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png"><link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png"><link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head><body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+/* Layout: kontè imigrasyon. Yon kolòn, ranje peyi tankou tampon pasepò, filt anlè. */
+:root {
+  --bg: #eef2f8;
+  --surface: #ffffff;
+  --fg: #0e1a33;
+  --muted: #55627d;
+  --line: #d3dbea;
+  --blue: #00209f;
+  --red: #c8102e;
+  --free: #0b6b4a;
+  --free-bg: #dff3ea;
+  --voa: #8a5a00;
+  --voa-bg: #fbeccb;
+  --warn-bg: #fde5e8;
+  --font-display: "Bricolage Grotesque", "Trebuchet MS", system-ui, sans-serif;
+  --font-body: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0a1224; --surface: #111c36; --fg: #e8eefb; --muted: #9fadc9; --line: #24335a;
+    --blue: #7f9bff; --red: #ff6b82; --free: #6fe0b0; --free-bg: #123a2e;
+    --voa: #f3c262; --voa-bg: #3b2d0b; --warn-bg: #3d1620;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0a1224; --surface: #111c36; --fg: #e8eefb; --muted: #9fadc9; --line: #24335a;
+  --blue: #7f9bff; --red: #ff6b82; --free: #6fe0b0; --free-bg: #123a2e;
+  --voa: #f3c262; --voa-bg: #3b2d0b; --warn-bg: #3d1620;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--fg); font-family: var(--font-body); font-size: 16px; line-height: 1.55; padding-inline: 16px; padding-block: 0 56px; }
+.wrap { max-width: 760px; margin-inline: auto; display: flex; flex-direction: column; gap: 28px; }
+header { padding-block: 36px 0; display: flex; flex-direction: column; gap: 14px; }
+.stripe { height: 6px; width: 96px; background: linear-gradient(90deg, var(--blue) 0 50%, var(--red) 50% 100%); border-radius: 2px; }
+h1 { font-family: var(--font-display); font-weight: 800; font-size: clamp(2.2rem, 8vw, 3.4rem); line-height: 1.02; letter-spacing: -0.02em; margin: 0; text-wrap: balance; }
+.lead { margin: 0; font-size: 1.1rem; color: var(--muted); max-width: 56ch; }
+.stamp { display: inline-flex; align-self: flex-start; gap: 8px; align-items: center; font-family: var(--font-mono); font-size: 0.78rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--red); border: 2px solid var(--red); border-radius: 4px; padding: 5px 10px; transform: rotate(-1.5deg); }
+.by { margin: 0; font-family: var(--font-mono); font-size: 0.9rem; color: var(--muted); }
+.by strong { color: var(--fg); font-weight: 600; }
+.warn { background: var(--warn-bg); border-left: 4px solid var(--red); padding: 14px 16px; border-radius: 4px; display: flex; flex-direction: column; gap: 6px; }
+.warn strong { font-family: var(--font-display); font-size: 1.05rem; }
+.warn p { margin: 0; font-size: 0.95rem; }
+.tools { display: flex; flex-direction: column; gap: 12px; position: sticky; top: env(safe-area-inset-top, 0px); background: var(--bg); padding-block: 10px; z-index: 2; }
+.search { width: 100%; font: inherit; color: var(--fg); background: var(--surface); border: 1.5px solid var(--line); border-radius: 6px; padding: 12px 14px; }
+.search:focus-visible, .chip:focus-visible, a:focus-visible { outline: 3px solid var(--blue); outline-offset: 2px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { font: inherit; font-weight: 600; font-size: 0.9rem; color: var(--fg); background: var(--surface); border: 1.5px solid var(--line); border-radius: 999px; padding: 8px 14px; cursor: pointer; }
+.chip[aria-pressed="true"] { background: var(--blue); border-color: var(--blue); color: #fff; }
+:root[data-theme="dark"] .chip[aria-pressed="true"] { color: #0a1224; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .chip[aria-pressed="true"] { color: #0a1224; } }
+h2 { font-family: var(--font-display); font-weight: 700; font-size: 1.5rem; margin: 0; letter-spacing: -0.01em; }
+.count { font-family: var(--font-mono); font-size: 0.85rem; color: var(--muted); }
+.list { list-style: none; margin: 0; padding: 0; background: var(--surface); border: 1.5px solid var(--line); border-radius: 8px; }
+.row { display: grid; grid-template-columns: 1fr auto; gap: 4px 14px; padding: 14px 16px; border-bottom: 1px solid var(--line); align-items: baseline; }
+.row:last-child { border-bottom: 0; }
+.name { font-family: var(--font-display); font-weight: 700; font-size: 1.15rem; min-width: 0; }
+.days { font-family: var(--font-mono); font-weight: 600; font-size: 0.9rem; text-align: right; white-space: nowrap; }
+.note { grid-column: 1 / -1; font-size: 0.92rem; color: var(--muted); min-width: 0; }
+.tag { display: inline-block; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; padding: 2px 8px; border-radius: 3px; margin-left: 8px; vertical-align: middle; }
+.tag.free { color: var(--free); background: var(--free-bg); }
+.tag.voa { color: var(--voa); background: var(--voa-bg); }
+.empty { padding: 24px 16px; color: var(--muted); }
+.cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+.box { background: var(--surface); border: 1.5px solid var(--line); border-radius: 8px; padding: 16px; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.box h3 { font-family: var(--font-display); font-size: 1.1rem; margin: 0; }
+.box p, .box ul { margin: 0; font-size: 0.95rem; }
+.box ul { padding-left: 18px; display: flex; flex-direction: column; gap: 4px; }
+.sec { display: flex; flex-direction: column; gap: 12px; }
+footer { font-size: 0.88rem; color: var(--muted); display: flex; flex-direction: column; gap: 8px; border-top: 1px solid var(--line); padding-top: 18px; }
+footer a, .box a { color: var(--blue); }
+@media (prefers-reduced-motion: no-preference) { .chip { transition: background 0.15s, color 0.15s; } }
+
+.logo-link{display:block;align-self:flex-start}
+.logo{width:100%;max-width:340px;height:auto;display:block}
+.menu{display:flex;flex-wrap:wrap;gap:6px 18px;font-weight:600;font-size:.95rem}
+.menu a{color:var(--fg);text-decoration:none;padding:4px 0;border-bottom:2px solid transparent}
+.menu a:hover,.menu a:focus-visible{border-bottom-color:var(--red)}
+.cta{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-block;font-weight:600;text-decoration:none;color:var(--blue);background:var(--surface);border:1.5px solid var(--blue);border-radius:6px;padding:11px 18px}
+.btn.primary{background:var(--blue);color:#fff}
+:root[data-theme="dark"] .btn.primary{color:#0a1224}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .btn.primary{color:#0a1224}}
+.logo-link{background:#fff;border-radius:8px;padding:8px}
+.thumb{display:block;height:150px;border-radius:6px;background:var(--img),linear-gradient(135deg,var(--c1),var(--c2));background-size:cover;background-position:center}
+.country-link{color:inherit;text-decoration:none;border-bottom:2px solid var(--line)}
+.country-link:hover,.country-link:focus-visible{border-bottom-color:var(--red);color:var(--blue)}
+.row{cursor:default}
+.site-links,.social-links{display:flex;flex-wrap:wrap;gap:8px 14px;margin-top:4px}
+.site-links a,.social-links a{font-weight:600}
+</style>
+
+<div class="wrap">
+  <header>
+    <a href="/" class="logo-link" aria-label="FrereJeangardy.com — Akèy"><img class="logo" src="logo.png" alt="Vwayaj San Viza — Pa Frère Jeangardy" width="900" height="450"></a>
+    <nav class="menu" aria-label="Meni prensipal">
+      <a href="/">Akèy</a>
+      <a href="#t-lis">Peyi San Viza</a>
+      <a href="#t-travay">Travay pa Peyi</a>
+      <a href="blog-peyi-san-viza.html">Blog</a>
+      <a href="videyo.html">Videyo</a>
+      <a href="contact.html">Kontakte Nou</a>
+    </nav>
+    <div class="stripe"></div>
+    <span class="stamp">Verifye 4 oktòb 2026</span>
+    <h1>Peyi San Viza ak e-Viza pou Ayisyen</h1>
+    <p class="lead">Lis peyi kote yon moun ki gen paspò ayisyen ka antre san viza oswa jwenn li lè l rive. Ou wè konbyen jou ou ka rete ak kondisyon yo.</p>
+    <p class="by">Pa <strong>Frère Jeangardy</strong></p>
+    <div class="cta">
+      <a class="btn primary" href="#t-lis">Chèche Peyi</a>
+      <a class="btn" href="#t-travay">Travay Aletranje</a>
+    </div>
+  </header>
+
+  <div class="warn" role="note">
+    <strong>Verifye anvan ou achte biyè avyon</strong>
+    <p>Règ viza yo chanje souvan, e sit entènèt yo pa dakò youn ak lòt sou nonb peyi a. Lis sa a se enfòmasyon jeneral epi kondisyon yo ka chanje. Verifye toujou ak sous gouvènman ofisyèl la, anbasad la oswa konpayi avyon an anvan ou peye. Sa pa konsèy legal.</p>
+  </div>
+
+  <section class="sec" aria-labelledby="t-lis">
+    <h2 id="t-lis">Chwazi peyi a</h2>
+    <div class="tools">
+      <input class="search" id="q" type="search" placeholder="Chèche yon peyi (egzanp: Singapou)" aria-label="Chèche yon peyi" autocomplete="off">
+      <div class="chips" role="group" aria-label="Filt">
+        <button class="chip" type="button" data-f="all" aria-pressed="true">Tout</button>
+        <button class="chip" type="button" data-f="free" aria-pressed="false">San viza</button>
+        <button class="chip" type="button" data-f="voa" aria-pressed="false">Viza lè w rive</button>
+      </div>
+      <div class="count" id="count" aria-live="polite"></div>
+    </div>
+    <ul class="list" id="list"></ul>
+  </section>
+
+  <section class="sec" aria-labelledby="t-pa">
+    <h2 id="t-pa">Peyi ki fèmen pou Ayisyen</h2>
+    <div class="cols">
+      <div class="box">
+        <h3>Pa gen aksè</h3>
+        <ul>
+          <li><strong>Sirinam</strong>: Ayisyen pa gen dwa antre, sof si yo gen yon pèmi espesyal ofisyèl.</li>
+          <li><strong>Etazini</strong>: gen restriksyon sou viza depi 9 jen 2025, ak kèk eksepsyon.</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>Mande viza ankò</h3>
+        <ul>
+          <li>Barbad ak Dominik te mande viza ankò pou Ayisyen.</li>
+          <li>Repiblik Dominikèn, Kanada, Meksik, Brezil, Lafrans ak peyi Schengen mande viza.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="t-konsey">
+    <h2 id="t-konsey">Anvan ou pati</h2>
+    <div class="cols">
+      <div class="box">
+        <h3>Gade eskal yo</h3>
+        <p>Si avyon an fè eskal nan yon lòt peyi, ou ka bezwen viza transit. Mande konpayi avyon an.</p>
+      </div>
+      <div class="box">
+        <h3>Prepare papye ou</h3>
+        <p>Pasipò ki valab, biyè retou, adrès kote w ap rete ak prèv lajan. Kèk peyi mande kat vaksen tou.</p>
+      </div>
+      <div class="box">
+        <h3>Pa peye entèmedyè</h3>
+        <p>Viza lè w rive ak pèmi gratis pa bezwen ajan. Se sit gouvènman an ki bay enfòmasyon ofisyèl la.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="t-evisa">
+    <h2 id="t-evisa">Viza sou entènèt (e-viza)</h2>
+    <div class="box">
+      <p>Peyi sa yo mande ou aplike sou entènèt anvan ou pati. Se pa san viza, men se pi senp pase anbasad.</p>
+      <p><strong>Kolonbi</strong> 90 jou, <strong>Kiba</strong> 90 jou, <strong>Vyetnam</strong> 90 jou, <strong>Nijerya</strong> 90 jou, <strong>Etyopi</strong> jiska 90 jou, <strong>Zanbi</strong> 90 jou, <strong>Zimbabwe</strong> 90 jou, <strong>Tayi</strong> 30 jou, <strong>Lend</strong> 60 jou, <strong>Kenya</strong> 90 jou (otorizasyon eTA, <a href="https://www.etakenya.go.ke/en" target="_blank" rel="noopener">sit ofisyèl</a>; <a href="blog-eta-kenya.html">gid konplè</a>).</p>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="t-travay">
+    <h2 id="t-travay">Kondisyon Travay pa Peyi</h2>
+    <div class="warn" role="note">
+      <strong>Atansyon ak fo ofri travay</strong>
+      <p>Nou pa ajans rekritman e nou pa vann kontra travay. Pa peye pesonn pou yon "garanti" travay. Verifye ofri yo ak sit gouvènman an oswa anbasad la.</p>
+    </div>
+    <div class="cols">
+      <div class="box">
+        <h3><a href="peyi-singapou.html">Singapou</a></h3>
+        <a class="thumb" href="peyi-singapou.html" aria-label="Singapou" style="--img:url('img-singapou.jpg');--c1:#c8102e;--c2:#0e1a33"></a>
+        <p><strong>Travay:</strong> Pèmi travay obligatwa. Salè yo wo, men règ travay yo strik.</p>
+      </div>
+      <div class="box">
+        <h3><a href="peyi-rwanda.html">Rwanda</a></h3>
+        <a class="thumb" href="peyi-rwanda.html" aria-label="Rwanda" style="--img:url('img-rwanda.jpg');--c1:#00a1de;--c2:#20603d"></a>
+        <p><strong>Travay:</strong> Opòtinite nan sèvis, touris ak teknoloji. Pèmi travay nesesè.</p>
+      </div>
+      <div class="box">
+        <h3><a href="peyi-malezi.html">Malezi</a></h3>
+        <a class="thumb" href="peyi-malezi.html" aria-label="Malezi" style="--img:url('img-malezi.jpg');--c1:#010066;--c2:#cc0001"></a>
+        <p><strong>Travay:</strong> Travay etranje yo bezwen sponsor ak pèmi travay.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div>Sous yo varye selon peyi. Lè gen yon lyen ofisyèl, verifye kondisyon final yo dirèkteman ak otorite peyi a. Paj sa a pa ranplase sit gouvènman oswa konsila yo.</div>
+    <div>Dènye verifikasyon: 4 oktòb 2026. Si ou wè yon enfòmasyon ki chanje, di nou pou n korije l.</div>
+    <div>Sit sa a se travay <strong>Frère Jeangardy</strong>.</div>
+  
+    <nav class="site-links" aria-label="Lyen sit la">
+      <a href="about.html">Sou Nou</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms &amp; Conditions</a>
+      <a href="disclaimer.html">Disclaimer</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+      <a href="contact.html">Kontakte nou</a>
+    </nav>
+    <div class="social-links">
+      <a href="https://youtube.com/@frerejeangardy?si=asYjS-3IR0XHsbA-" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://www.facebook.com/share/1Lxa4f39zq/" target="_blank" rel="noopener">Facebook</a>
+    </div>
+</footer>
+
+</div>
+
+<script>
+(function () {
+  var data = [
+    { n: "Singapou", t: "free", d: "30 jou", note: "" },
+    { n: "Malezi", t: "free", d: "1 mwa", note: "" },
+    { n: "Filipin", t: "free", d: "30 jou", note: "" },
+    { n: "Hong Kong", t: "free", d: "14 jou", note: "Teritwa otonòm Lachin." },
+    { n: "Rwanda", t: "free", d: "90 jou", note: "" },
+    { n: "Benen", t: "free", d: "90 jou", note: "Ou dwe gen kat vaksen entènasyonal." },
+    { n: "Gambi", t: "free", d: "90 jou", note: "Ou dwe jwenn otorizasyon antre nan Imigrasyon Gambi anvan ou vwayaje." },
+    { n: "Angola", t: "free", d: "30 jou", note: "Maksimòm 3 antre pa ane kalandriye." },
+    { n: "Grenad", t: "free", d: "Pa make", note: "Dire a pa make nan sous la. Mande anbasad la." },
+    { n: "Kiribati", t: "free", d: "90 jou", note: "90 jou pou chak peryòd 12 mwa." },
+    { n: "Mikwonezi", t: "free", d: "30 jou", note: "" },
+    { n: "Samoa", t: "free", d: "60 jou", note: "" },
+    { n: "Maldiv", t: "voa", d: "30 jou", note: "Viza gratis lè w rive." },
+    { n: "Sechèl", t: "voa", d: "3 mwa", note: "Pèmi gratis lè w rive. Ou ka pwolonje li jiska yon ane, ak frè." },
+    { n: "Palau", t: "voa", d: "30 jou", note: "Viza gratis lè w rive. Ou ka pwolonje de fwa, ak frè." },
+    { n: "Senegal", t: "voa", d: "90 jou", note: "" },
+    { n: "Moris", t: "voa", d: "60 jou", note: "" },
+    { n: "Tuvalu", t: "voa", d: "1 mwa", note: "" },
+    { n: "Timò-Leste", t: "voa", d: "30 jou", note: "Pa disponib nan tout pòt antre. Se nan ayewopò Dili oswa pò Dili." },
+    { n: "Lejip", t: "voa", d: "Pa make", note: "" },
+    { n: "Jòdani", t: "voa", d: "Pa make", note: "Gen kondisyon. Pa disponib nan tout pòt antre." },
+    { n: "Kap Vè", t: "voa", d: "Pa make", note: "Pa disponib nan tout pòt antre." },
+    { n: "Komò", t: "voa", d: "Pa make", note: "" },
+    { n: "Burundi", t: "voa", d: "Pa make", note: "" },
+    { n: "Bangladèch", t: "voa", d: "Pa make", note: "Gen kondisyon." }
+  ];
+  var slugs = {"Singapou": "singapou", "Malezi": "malezi", "Filipin": "filipin", "Hong Kong": "hong-kong", "Rwanda": "rwanda", "Benen": "benen", "Gambi": "gambi", "Angola": "angola", "Grenad": "grenad", "Kiribati": "kiribati", "Mikwonezi": "mikwonezi", "Samoa": "samoa", "Maldiv": "maldiv", "Sechèl": "sechel", "Palau": "palau", "Senegal": "senegal", "Moris": "moris", "Tuvalu": "tuvalu", "Timò-Leste": "timo-leste", "Lejip": "lejip", "Jòdani": "jodani", "Kap Vè": "kap-ve", "Komò": "komo", "Burundi": "burundi", "Bangladèch": "bangladech"};
+  var state = { f: "all", q: "" };
+  var list = document.getElementById("list");
+  var count = document.getElementById("count");
+  var q = document.getElementById("q");
+  var chips = document.querySelectorAll(".chip");
+
+  function norm(s) { return s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, ""); }
+
+  function render() {
+    var term = norm(state.q.trim());
+    var out = data.filter(function (c) {
+      return (state.f === "all" || c.t === state.f) && (!term || norm(c.n).indexOf(term) !== -1);
+    });
+    list.innerHTML = "";
+    if (!out.length) {
+      var e = document.createElement("li");
+      e.className = "empty";
+      e.textContent = "Pa gen rezilta. Eseye yon lòt non peyi.";
+      list.appendChild(e);
+    }
+    out.forEach(function (c) {
+      var li = document.createElement("li");
+      li.className = "row";
+      var name = document.createElement("div");
+      name.className = "name";
+      var link = document.createElement("a");
+      link.href = "peyi-" + slugs[c.n] + ".html";
+      link.className = "country-link";
+      link.textContent = c.n;
+      name.appendChild(link);
+      var tag = document.createElement("span");
+      tag.className = "tag " + c.t;
+      tag.textContent = c.t === "free" ? "San viza" : "Lè w rive";
+      name.appendChild(tag);
+      var days = document.createElement("div");
+      days.className = "days";
+      days.textContent = c.d;
+      li.appendChild(name);
+      li.appendChild(days);
+      if (c.note) {
+        var note = document.createElement("div");
+        note.className = "note";
+        note.textContent = c.note;
+        li.appendChild(note);
+      }
+      list.appendChild(li);
+    });
+    count.textContent = out.length + " peyi sou " + data.length;
+  }
+
+  chips.forEach(function (b) {
+    b.addEventListener("click", function () {
+      state.f = b.getAttribute("data-f");
+      chips.forEach(function (x) { x.setAttribute("aria-pressed", x === b ? "true" : "false"); });
+      render();
+    });
+  });
+  q.addEventListener("input", function () { state.q = q.value; render(); });
+  render();
+})();
+</script>
+
+</body></html>
