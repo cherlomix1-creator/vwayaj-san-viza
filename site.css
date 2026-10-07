@@ -142,3 +142,5 @@ footer a, .box a { color: var(--blue); }
 .post strong{font-family:var(--font-display);font-size:1.15rem}
 .post:hover,.post:focus-visible{border-color:var(--blue)}
 .article a.post{color:var(--fg)}
+
+.comments{margin-top:28px;padding-top:18px;border-top:1px solid rgba(128,128,128,.3)}.comments p{margin:0 0 14px}.fb-comments,.fb-comments span,.fb-comments iframe{max-width:100%!important}
